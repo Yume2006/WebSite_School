@@ -1,0 +1,200 @@
+body{
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0;
+}
+h1 {
+
+    font-size: 40px;
+}
+p{
+  
+}
+li{
+  width: 100%;
+  list-style: none;
+}
+ul#headerList{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 90vw;
+  padding: 0;
+  font-size: 20px;
+  color: #fff;
+}
+ul#headerList li{
+  flex-basis:22%; 
+}
+h1#headerlogo{
+  width: 60px;
+  height:60px;
+  object-fit: cover;
+}
+ul#headerlist:hover{
+  background-color: aqua;
+  color: #ff701e;
+}
+h1#top_title{
+  opacity: 0;
+  animation: slide-in_left  1.25s cubic-bezier(0.3,1,0.3,1) forwards;
+  animation-delay: 1s;
+  z-index: 2;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 120px;
+  color: #fff;
+}
+section{
+  margin-top: 15%;
+  /*animation*/
+  opacity: 0;
+  animation: fade-in_top 1s cubic-bezier(0.5,1,0.3,1) forwards;
+  animation-delay: 1.2s;
+}
+.square{
+  margin: -10px;
+  position: absolute;
+  z-index: 101;
+  background: greenyellow;
+  height: 100%;
+  width: 100%;
+  animation: triangle-transformation 2s cubic-bezier(0.3,1,0.3,1) forwards;
+  clip-path: inset(100% 0, 0 100%,0 0, 0 100%);
+}
+.triangle {
+  position: absolute;
+  z-index: 1;
+  background: greenyellow;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(100% 0, 60% 100%,100% 100%);
+  /*animation*/
+  animation: slide-in_right 1s cubic-bezier(0.5,1,0.3,1) forwards;
+  animation-delay: 1s;
+}
+h2{
+  animation: slide-in_left 1s cubic-bezier(0.33,1,0.68,1) forwards;
+}
+button{
+  background-color: #fff;
+  border: solid;
+  color: #ff701e;
+  border-color: #ff701e;
+  border-radius: 10%;
+  
+}
+div#thumbnail{
+  background: url(../images/ソファイラスト.jpg) no-repeat right center/cover;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  /*animation*/
+  opacity: 0;
+  animation: fade-in_bottom 1s cubic-bezier(0.5,1,0.3,1) forwards;
+  animation-delay: 1.2s;
+}
+button:hover{
+  animation: hover 0.5s cubic-bezier(0.5,1,0.3,1) forwards;
+}
+u {
+  font-size: 20px;  
+}
+
+img#top_img{
+  position: relative;
+  width: 100%;
+}
+ul#top_list{
+  width: 100%;
+  padding-left:0;
+}
+div#top_profile{  
+  display:flex;
+}
+img{
+  width: 50%;
+}
+ul#top_portfolio{
+  width: 100%;
+}
+ul#list{
+  border: 2px solid;
+  border-color: black;
+}
+header{
+  z-index:100;
+  width:100%;
+  height: 10vh;
+  display: flex;
+  position:fixed;
+  align-items: center;
+  justify-content: space-around;
+  top:0;
+  left:0;
+  /*animation*/
+  opacity: 0;
+  animation: fade-in_top 1s cubic-bezier(0.5,1,0.3,1) forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes fade-in_top{
+  0%{
+    transform: translateY(-10%);
+  }100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes fade-in_bottom{
+  0%{
+    transform: translateY(10%);
+  }100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-in_left{
+  0%{
+    
+    transform:translateX(-100%);
+  }100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-in_right{
+  0%{
+    
+    transform:translateX(100%);
+  }100%{
+    opacity: 0.75;
+    transform: translateX(0%);
+  }
+}
+@keyframes hover{
+  0%{
+
+  }
+  100%{
+    background-color: aquamarine
+  }
+}
+@keyframes triangle-transformation{
+  0%{
+    
+    /*xleft-right,ytop-bottom*/
+    transform: translateX(100%);
+  }50%{
+    transform: translateX(0%);
+  }100%{
+    transform: translateX(100%);
+    
+  }
+}
