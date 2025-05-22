@@ -31,9 +31,12 @@ ul#headerList li{
   flex-basis:22%; 
 }
 h1#headerlogo{
-  width: 100%;
+
+}
+h1#headerlogo img{
   height:100%;
   object-fit: cover;
+  margin auto;
 }
 ul#headerlist:hover{
   background-color: aqua;
