@@ -38,7 +38,7 @@ ul#headerlist:hover{
 }
 h1#top_title{
   opacity: 0;
-  animation: slide-in_left  1.25s cubic-bezier(0.3,1,0.3,1) forwards;
+  animation: slide-in_left  1.25s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1s;
   z-index: 2;
   position: absolute;
