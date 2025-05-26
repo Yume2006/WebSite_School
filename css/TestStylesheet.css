@@ -11,6 +11,7 @@ h1 {
 }
 h2{
   font-size: 32px;
+  animation: slide-in_left 1s cubic-bezier(0.33,1,0.68,1) forwards;
 }
 p{
   font-size: 18px;
@@ -87,9 +88,6 @@ section{
   /*animation*/
   animation: slide-in_right 1s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1s;
-}
-h2{
-  animation: slide-in_left 1s cubic-bezier(0.33,1,0.68,1) forwards;
 }
 button{
   background-color: #fff;
