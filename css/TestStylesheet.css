@@ -1,11 +1,5 @@
-.hachi-maru-pop-regular {
-  
-  font-weight: 400;
-  font-style: normal;
-}
-
 body{
-  font-family: "Hachi Maru Pop", cursive;
+  font-family: "Hachi Maru Pop" cursive;
   position: relative;
   width: 100%;
   padding: 0 10px;
