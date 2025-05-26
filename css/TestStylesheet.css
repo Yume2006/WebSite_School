@@ -120,15 +120,16 @@ img#top_img{
   position: relative;
   width: 100%;
 }
-ul#top_list{
+.top_list{
   width: 100%;
   padding-left:0;
 }
 div#top_profile{  
   display:flex;
 }
-ul#top_portfolio{
+.top_list #top_portfolio{
   width: 100%;
+  margin-top: 10%;
 }
 ul#list{
   border: 2px solid;
