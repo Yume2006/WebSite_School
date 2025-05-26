@@ -23,6 +23,9 @@ li{
 img{
   width: 50%;
 }
+section{
+  animation: fade-in_bottom 1s  cubic-bezier(0.33,1,0.68,1) forwards;
+}
 ul#headerList{
   display: flex;
   justify-content: space-around;
