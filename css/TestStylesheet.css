@@ -97,7 +97,7 @@ button{
   
 }
 div#thumbnail{
-  background: url(../images/ソファイラスト.jpg) no-repeat right center/cover;
+  background: url(../../images/ソファイラスト.jpg) no-repeat right center/cover;
   position: relative;
   height: 100vh;
   overflow: hidden;
