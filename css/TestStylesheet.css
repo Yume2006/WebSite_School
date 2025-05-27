@@ -284,6 +284,8 @@ div#thumbnail h2{
   z-index:1;
   font-size:40px;
   background:#000;
+  color:#333;
+  right:0;
 }
 img#top_img{
   position: relative;
