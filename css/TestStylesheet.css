@@ -279,6 +279,11 @@ div#thumbnail{
   animation: fade-in_bottom 1s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1.2s;
 }
+div#thumbnail h2{
+  position:absolute;
+  z-index:1;
+  
+}
 img#top_img{
   position: relative;
   object-position: center;
