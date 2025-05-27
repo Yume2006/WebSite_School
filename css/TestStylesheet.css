@@ -284,13 +284,16 @@ div#thumbnail div#top_title_right{
   position:absolute;
   z-index:1;
   font-size:10vw;
-  background:#000;
   color:#fff;
   right:5%;
   bottom:0;
 }
 div#thumbnail div#top_title_right h2#top_title_right_t{
+  background:#000;
   margin-right: 5%;
+}
+div#thumbnail div#top_title_rignt h2#top_title_right_b{
+  background:#000;  
 }
 img#top_img{
   position: relative;
