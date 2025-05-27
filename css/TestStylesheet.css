@@ -285,11 +285,11 @@ div#thumbnail div#top_title_right{
   font-size:5vw;
   background:#000;
   color:#fff;
-  right:0;
+  right:5%;
   bottom:0;
 }
 div#thumbnail div#top_title_right h2#top_title_right_t{
-
+  right: 10%;
 }
 img#top_img{
   position: relative;
