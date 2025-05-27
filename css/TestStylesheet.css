@@ -290,9 +290,11 @@ div#thumbnail div#top_title_right{
   bottom:0;
 }
 div#thumbnail div#top_title_right p#top_title_right_t{
+  width: fit-content;
   background:#000;
 }
 div#thumbnail div#top_title_right p#top_title_right_b{
+  width: fit-content;
   background:#000;  
 }
 img#top_img{
