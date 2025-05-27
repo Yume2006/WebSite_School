@@ -283,6 +283,7 @@ div#thumbnail h2{
   position:absolute;
   z-index:1;
   font-size:40px;
+  background:#000;
 }
 img#top_img{
   position: relative;
