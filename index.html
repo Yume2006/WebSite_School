@@ -16,57 +16,70 @@
 <body>
     <div class="square"></div>
     <header>
-        <h1 id="headerlogo"><img src="./images/webサイトロゴ.png" alt="webサイトロゴ"></h1>
+        <!--<p id="headerlogo"><img src="images/webサイトロゴ.png" alt="webサイトロゴ"></p>-->
         <nav>
             <ul id="headerList">
-                <li><a href="profile.html">profile</a></li>
-                <li>portfolio</li>
-                <li>blog</li>
-                <li>contact</li>
+                <li><a href="index.html">Top</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="thumbnail">
             <div class="triangle"></div>
-            <h1 id="top_title">Yume's Site</h1>
+            <h1 id="top_title_left">Yume's</h1>
+            <h1 id ="top_title_bottom">Site</h1>
         </div>
         <section class = "top_list">
-            <h1></h1>
+            <h3 id = "under_line">皆様のお役に立ちたい</h3>
+            <p><br>自己紹介サイトをご閲覧いただきありがとうございます。<br>このサイトは、基本情報の他、実際に作った作品なども掲載しておりますので、ぜひご覧ください。</p>
         </section>
-        <section class="top_list">
-            <h2>profile</h2>
-            <div id="top_profile">
-                <img src="./images/ゆなめアイコン.jpg" alt="プロフィール写真">
-                <ul>
-                    <li>
-                        <h3>名前</h3>
-                        <p>生年月日</p>
-                        <p>出身県</p>
-                    </li>
-                </ul>
-            </div>
-            <h4>More detail</h4>
-        </section>
-        <section class="top_list">
-            <h2>portfolio</h2>
-            <div id="top_portfolio">
-                <div id = top_illust>
-                    <img alt="イラストイメージ">
-                    <h3>イラスト・二次創作</h3>
-                    <p>実際に描いたイラストを掲載しております。※二次創作も含まれています</p>
-                    <h4>More detail</h4>
+
+        
+        <div class ="marge_background">
+            <section class="top_list">
+                <h2 id = "title">portfolio</h2>
+                <div class="top_portfolio">
+                    <div class = top_portfolio_detail>
+                        <img src = "images/illust_img(仮).png" alt="イラストイメージ">
+                        <h3>イラスト・二次創作</h3>
+                        <p>実際に描いたイラストを掲載しております。※二次創作も含まれています</p>
+                        <div class = "portfolio_detail_button">
+                            <a class = "detail_button" href="profile.html">More detail →</a>
+                        </div>
+                    </div>
+                        
+                    <div class = "top_portfolio_detail">
+                        <img src="images/develop_img(仮).png" alt="開発イメージ">
+                        <h3>開発</h3>
+                        <p>実際に制作したゲーム等を掲載しております。</p>
+                        <div class = "portfolio_detail_button">
+                            <a class = "detail_button" href="profile.html">More detail →</a>
+                        </div>
+                    </div>
                 </div>
-                    
-            </div>
-            <div id = "top_portfolio">
-                <img alt="開発イメージ">
-                <h3>開発</h3>
-                <p>実際に制作したゲーム等を掲載しております。</p>
-                <h4>More detail</h4>
+            </section>
+            <p id = "backgroundcolor">Portfolio</p>
+        </div>
+
+        <section class="top_list">
+            <h2 id = "title">profile</h2>
+            <div class="top_profile">
+                <img src="./images/ゆなめアイコン.jpg" alt="プロフィール写真">
+                <div class="profile_right">
+                    <div id = "profile_str">
+                        <h3>名前:高橋 夢</h3>
+                        <p><br>2024年4月から、情報系専門学校に通い、日々知識とスキルを習得している。</p>
+                    </div>
+                    <div class = "profile_detail_button">
+                        <a class = "detail_button" href="profile.html">More detail →</a>
+                    </div>
+                </div>
             </div>
         </section>
-        <button>クリック</button>
     </main>
     <footer>
 
