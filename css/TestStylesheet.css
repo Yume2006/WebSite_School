@@ -289,7 +289,7 @@ div#thumbnail div#top_title_right{
   bottom:0;
 }
 div#thumbnail div#top_title_right h2#top_title_right_t{
-  right: 10%;
+  padding-right: 5%;
 }
 img#top_img{
   position: relative;
