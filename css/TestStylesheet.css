@@ -289,12 +289,12 @@ div#thumbnail div#top_title_right{
   bottom:0;
 }
 div#thumbnail div#top_title_right h2#top_title_right_t{
-  display: inline;
+  display: inline-block;
   background:#000;
   margin-right: 5%;
 }
 div#thumbnail div#top_title_right h2#top_title_right_b{
-  display: inline;
+  display: inline-block;
   background:#000;  
 }
 img#top_img{
