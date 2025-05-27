@@ -294,6 +294,7 @@ div#thumbnail div#top_title_right h2#top_title_right_t{
   margin-right: 5%;
 }
 div#thumbnail div#top_title_right h2#top_title_right_b{
+  display: inline;
   background:#000;  
 }
 img#top_img{
