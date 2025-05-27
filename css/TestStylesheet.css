@@ -4,72 +4,247 @@ body{
   width: 100%;
   padding: 0 10px;
   margin: 0;
+  overflow-x: hidden;
 }
 h1 {
 
   font-size: 60px;
 }
 h2{
-  font-size: 4vw;
+  font-size: 40px;
   animation: slide-in_left 1s cubic-bezier(0.33,1,0.68,1) forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+h3{
+  font-size: 24px;
 }
 p{
   font-size: 18px;
 }
 li{
   width: 100%;
+  font-size: 32px;
   list-style: none;
 }
 img{
   width: 50%;
 }
 section{
-  animation: fade-in_bottom 1s  cubic-bezier(0.33,1,0.68,1) forwards;
+  animation: fade-in_bottom 0.5s cubic-bezier(0.33,1,0.68,1) forwards;
+  animation-delay: 1.5s;
+}
+#under_line{
+  display: inline-block;
+  animation: under_line 0.5s cubic-bezier(0.33,1,0.68,1) forwards;
+}
+nav{
+  width: 80%;
 }
 ul#headerList{
   display: flex;
   justify-content: space-around;
   text-align: center;
-  width: 90vw;
-  padding: 0;
+  width: 100%;
+  margin-left: auto;
+  padding: 10px 20px;
   font-size: 20px;
   color: #fff;
-}
-ul#headerList li{
-  flex-basis:22%; 
-}
-h1#headerlogo{
-  height:100%;
+  /*background-color: rgba(255,255,255,0.8);*/
+  border-radius: 100vh;
+  opacity: 0.7;
 
 }
-h1#headerlogo img{
-  height:100%;
-  object-fit: contain;
-  margin: auto;
+ul#headerList li{
+  position: relative;
+  text-stroke: 2px black;
+  paint-order: stroke;
+  flex-basis:20%;
+  -webkit-text-stroke: 2px black;
 }
-ul#headerlist:hover{
-  background-color: aqua;
-  color: #ff701e;
-}
-h1#top_title{
-  opacity: 0;
-  animation: slide-in_left  1.25s cubic-bezier(0.5,0.7,0.3,1) forwards;
-  animation-delay: 1s;
-  z-index: 2;
+ul#headerList li::after{
+  width: 20px;
+  height: 20px;
+  content: url(../images/矢印.svg);
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  margin: 0;
-  font-size: 120px;
-  color: #fff;
+  transform: rotate(deg90);
+
+}
+p#headerlogo{
+  width: 10%;
+  height: 100%;
+
+}
+p#headerlogo img{
+  width: 100%;
+  height: 100%;
+    
+  object-fit: contain;
+}
+nav ul#headerList li a::after{
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: greenyellow;
+  transform: scale(0,1);
+  transform-origin: center top;/*トランスフォーム開始位置*/
+  transition: transform .3s;/*アニメーション速度*/
+}
+ul#headerList li a:hover::after{
+  transform: scale(1,1);
 }
 section{
   margin-top: 15%;
   /*animation*/
   opacity: 0;
-  animation: fade-in_top 1s cubic-bezier(0.5,0.7,0.3,1) forwards;
+  animation: fade-in_bottom 1s cubic-bezier(0.5,0.7,0.3,1) forwards;
+  animation-delay: 1.2s;
+  z-index: 1;
+}
+.profile_detail_button{
+  height: 40%;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.detail_button{
+  position: relative;
+  display: inline;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: solid;
+  color: green;
+  border-color: green;
+  border-radius: 100vh;
+  transition: .3s;
+}
+.detail_button::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 20px;
+  top:0;
+  left:0;
+  
+  border-radius: 100vh;
+  transform-origin: 50% 0%;
+  transition: scaleY(0);
+  transition: transform ease .3s;
+  z-index: -1;
+}
+.detail_button:hover{
+  background: green;
+  color:#fff
+}
+.detail_button:hover::before {
+  transform-origin: 50% 100%;
+  transform: scaleY(1);
+}
+header{
+  z-index:100;
+  width:100%;
+  height: 15vh;
+  display:flex;
+  gap: 0 20px;
+  position:fixed;
+  align-items: center;
+  justify-content: space-around;
+  top:0;
+  left:0;
+  /*animation*/
+  opacity: 0;
+  animation: fade-in_top 1s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1.2s;
 }
+.marge_background{
+  position: relative;
+}
+.marge_background #backgroundcolor{
+  margin-left:20px;
+  transform-origin: left center;
+  position: absolute;
+  font-size: 5vh;
+  transform: rotate(90deg);
+  top:0;
+  left: 0;
+  opacity: 0.7;
+  color: greenyellow;
+  z-index: -1;
+}
+
+/*subTitle*/
+.subtitle h2{
+  font-size: 10vh;
+  color: #fff;
+}
+.subtitle p{
+  font-size: 3vh;
+  color: #fff;
+}
+.subtitle img{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+  animation: fade-in_bottom 1.5s cubic-bezier(0.5,0.7,0.3,1) forwards;
+  animation-delay: 1.2s;
+  filter: brightness(50%);
+}
+.subtitle div#subtitle_msg{
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  text-align: right;
+  right:15%;
+  padding: 30vh 0;
+}
+
+
+
+
+
+
+/*index_css*/
+h1#top_title_left{
+  margin-left:1cqh;
+  transform-origin: left center;
+  width: 100vh;
+  font-family: 'HGP創英角ゴシック';
+  opacity: 0;
+  animation: slide-in_left_toptitle  1.25s cubic-bezier(0.5,0.7,0.3,1) forwards;
+  animation-delay: 1s;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  margin-top: -20vh;
+  font-size: 25vh;
+  color: #fff;
+  font-weight: bold;
+  mix-blend-mode: overlay;
+}
+h1#top_title_bottom{
+  margin-left:30vh;
+  width: 100vh;
+  font-family: 'HGP創英角ゴシック';
+  opacity: 0;
+  animation: slide-in_left  1.25s cubic-bezier(0.5,0.7,0.3,1) forwards;
+  animation-delay: 1s;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  font-size: 25vh;
+  color: #fff;
+  font-weight: bold;
+  mix-blend-mode: overlay;
+}
+
 .square{
   margin: -10px;
   position: absolute;
@@ -92,31 +267,17 @@ section{
   animation: slide-in_right 1s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1s;
 }
-button{
-  background-color: #fff;
-  border: solid;
-  color: #ff701e;
-  border-color: #ff701e;
-  border-radius: 10%;
-  
-}
 div#thumbnail{
-  background: url(images/ソファイラスト.jpg) no-repeat right center/cover;
+  background: url(../images/ハック軍服サムネ.png) no-repeat right center/cover;
   position: relative;
   height: 100vh;
   overflow: hidden;
   object-fit: cover;
-  object-position: center;
+  background-position: center;
   /*animation*/
   opacity: 0;
   animation: fade-in_bottom 1s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1.2s;
-}
-button:hover{
-  animation: hover 0.5s cubic-bezier(0.5,1,0.3,1) forwards;
-}
-u {
-  font-size: 20px;  
 }
 img#top_img{
   position: relative;
@@ -128,31 +289,51 @@ img#top_img{
   width: 100%;
   padding-left:0;
 }
-div#top_profile{  
+.top_list h2#title{
+  padding-bottom: 5%;
+  text-align: center;
+}
+.top_profile{  
   display:flex;
+}
+.top_profile img{
+  width: 50%;
+  scale: 90%;
+}
+
+.top_profile div#profile_str{
+  width: 50%;
+  height: 60%;
+  padding: 20% 20px;
+  text-align: center;
+  margin: auto;
+}
+.top_portfolio{
+  display: flex;
+  gap: 0 20px;
+}
+.top_portfolio_detail{
+  text-align: center;
+  width: 50%;
+  border: solid 3px rgb(199, 205, 197);
+  padding: 5% 0;
+}
+.top_portfolio_detail img{
+  width: 50%;
+  object-fit: fill;
+  padding: auto;
 }
 .top_list #top_portfolio{
   width: 100%;
   margin-bottom: 60px;
+  text-align: center;
 }
 ul#list{
   border: 2px solid;
   border-color: black;
 }
-header{
-  z-index:100;
-  width:100%;
-  height: 10vh;
-  display: flex;
-  position:fixed;
-  align-items: center;
-  justify-content: space-around;
-  top:0;
-  left:0;
-  /*animation*/
-  opacity: 0;
-  animation: fade-in_top 1s cubic-bezier(0.5,1,0.3,1) forwards;
-  animation-delay: 1.2s;
+.portfolio_detail_button{
+  padding-top: 50px;
 }
 
 @keyframes fade-in_top{
@@ -171,13 +352,24 @@ header{
     opacity: 1;
   }
 }
-@keyframes slide-in_left{
+@keyframes slide-in_left_toptitle{
   0%{
-    
+    transform: rotate(90deg);
+    transform-origin: left bottom;
     transform:translateX(-100%);
   }100%{
     opacity: 1;
     transform: translateX(0%);
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+  }
+}
+@keyframes slide-in_left{
+    0%{
+    transform:translateX(-100%);
+  }100%{
+    opacity: 1;
+    transform-origin: left bottom;
   }
 }
 @keyframes slide-in_right{
@@ -187,14 +379,6 @@ header{
   }100%{
     opacity: 0.75;
     transform: translateX(0%);
-  }
-}
-@keyframes hover{
-  0%{
-
-  }
-  100%{
-    background-color: aquamarine
   }
 }
 @keyframes triangle-transformation{
@@ -207,5 +391,20 @@ header{
   }100%{
     transform: translateX(100%);
     
+  }
+}
+@keyframes under_line {
+  from{
+    background: #fff;
+  }to{
+    background: linear-gradient(transparent 60%, #ffff00 30%);
+  }
+  
+}
+@keyframes btn_hover{
+  from{
+
+  }to{
+
   }
 }
