@@ -280,6 +280,7 @@ div#thumbnail{
   animation-delay: 1.2s;
 }
 div#thumbnail div#top_title_right{
+  display: block;
   width: 30%;
   position:absolute;
   z-index:1;
