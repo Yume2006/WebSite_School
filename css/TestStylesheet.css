@@ -298,6 +298,8 @@ div#thumbnail div#top_title_right p#top_title_right_b{
   width: fit-content;
   background:#000;
   font-size:8vw;
+  text-align: right;
+  right: -20px;
 }
 img#top_img{
   position: relative;
