@@ -289,6 +289,7 @@ div#thumbnail div#top_title_right{
   bottom:0;
 }
 div#thumbnail div#top_title_right h2#top_title_right_t{
+  display: inline;
   background:#000;
   margin-right: 5%;
 }
