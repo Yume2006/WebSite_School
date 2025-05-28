@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/TestStylesheet.css">
     <link rel="shortcut icon" href="images/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,61 +27,82 @@
     <main>
         <div id="thumbnail">
             <div class="triangle"></div>
-            <h1 id="top_title_left">Yume's</h1>
-            <h1 id ="top_title_bottom">Site</h1>
-            <div id = "top_title_right">
-                <p id = "top_title_right_t">#ゆなめの</p>
-                <p id = "top_title_right_b">サイト</p>
-            </div>
-            
+            <h1 class="top_title">Yume's Site</h1>
+            <div class="top_background"><img src="images/ハック軍服サムネ.png"></div>
+
         </div>
-        <section class = "top_list">
-            <h3 id = "under_line">皆様のお役に立ちたい</h3>
-            <p><br>自己紹介サイトをご閲覧いただきありがとうございます。<br>このサイトは、基本情報の他、実際に作った作品なども掲載しておりますので、ぜひご覧ください。</p>
+        <section class="top_list">
+            <img id="introduct_img" src="images/ソファイラスト.jpg">
+            <div class="introduct_text">
+                <h3 id="under_line">皆様のお役に立ちたくて</h3>
+                <p><br>自己紹介サイトをご閲覧いただきありがとうございます。<br>このサイトは、基本情報の他、実際に作った作品なども掲載しておりますので、ぜひご覧ください。</p>
+            </div>
+            <div id="line_h"></div>
+
         </section>
 
-        
-        <div class ="marge_background">
-            <section class="top_list">
-                <h2 id = "title">portfolio</h2>
-                <div class="top_portfolio">
-                    <div class = top_portfolio_detail>
-                        <img src = "images/illust_img(仮).png" alt="イラストイメージ">
-                        <h3>イラスト・二次創作</h3>
-                        <p>実際に描いたイラストを掲載しております。※二次創作も含まれています</p>
-                        <div class = "portfolio_detail_button">
-                            <a class = "detail_button" href="profile.html">More detail →</a>
+        <section class="top_list">
+            <h2 id="title">-Profile-</h2>
+            <div class="top_profile">
+                <img src="./images/ゆなめアイコン.jpg" alt="プロフィール写真">
+                <div class="profile_right">
+                    <div id="profile_str">
+                        <p>Takahashi Yume</p>
+                        <h3>高橋 夢</h3>
+                        <p><br>2006月1月生まれ。<br>
+                        2024年4月から、専門学校に通い、日々知識とスキルを習得している。</p>
+                        <div class="profile_detail_button">
+                            <a class="detail_button" href="profile.html">More detail →</a>
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="marge_background">
+            <section class="top_list">
+                <h2 id="title">-Portfolio-</h2>
+                <div class="top_portfolio">
+                    <div class=top_portfolio_detail>
+                        <img src="images/ポートフォリオ仮イラスト.jpg" alt="イラストイメージ">
+                        <div class = "top_portfolio_str">
+                            <h3>イラスト・二次創作</h3>
+                            <p><br>実際に描いたイラストを掲載しております。※二次創作も含まれています</p>
+                        </div>
                         
-                    <div class = "top_portfolio_detail">
-                        <img src="images/develop_img(仮).png" alt="開発イメージ">
-                        <h3>開発</h3>
-                        <p>実際に制作したゲーム等を掲載しております。</p>
-                        <div class = "portfolio_detail_button">
-                            <a class = "detail_button" href="profile.html">More detail →</a>
+                        <div class="portfolio_detail_button">
+                            <a class="detail_button" href="profile.html">More detail →</a>
+                        </div>
+                    </div>
+                    <div class="top_portfolio_detail">
+                        <img src="images/ポートフォリオ仮.jpg" alt="開発イメージ">
+                        <div class = "top_portfolio_str">
+                            <h3>開発</h3>
+                            <p><br>実際に制作したゲーム等を掲載しております。</p>
+                        </div>
+                        <div class="portfolio_detail_button">
+                            <a class="detail_button" href="profile.html">More detail →</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <p id = "backgroundcolor">Portfolio</p>
+            <section class = "top_list">
+                <h2 id = "title">-Blog-</h2>
+                <table class = "top_blog_table">
+                    <thead>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#"></a></td>
+                        <td><h3>初Officialサイトを開設</h3><p>2025/05/31</p></td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                  </table>
+            </section>
         </div>
-
-        <section class="top_list">
-            <h2 id = "title">profile</h2>
-            <div class="top_profile">
-                <img src="./images/ゆなめアイコン.jpg" alt="プロフィール写真">
-                <div class="profile_right">
-                    <div id = "profile_str">
-                        <h3>名前:高橋 夢</h3>
-                        <p><br>2024年4月から、情報系専門学校に通い、日々知識とスキルを習得している。</p>
-                    </div>
-                    <div class = "profile_detail_button">
-                        <a class = "detail_button" href="profile.html">More detail →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
 
