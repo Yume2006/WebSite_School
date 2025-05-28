@@ -1,30 +1,33 @@
 body{
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "游ゴシック Light", sans-serif;
   position: relative;
   width: 100%;
   padding: 0 10px;
   margin: 0;
   overflow-x: hidden;
+  background: #96af80;
+  color: #fff;
 }
 h1 {
 
   font-size: 60px;
 }
 h2{
-  font-size: 40px;
-  animation: slide-in_left 1s cubic-bezier(0.33,1,0.68,1) forwards;
-  animation-delay: 1.2s;
-  opacity: 0;
+  font-family: '游明朝';
+  font-size: 60px;
+  font-weight: bold;
 }
 h3{
-  font-size: 24px;
+  font-family: '游ゴシック';
+  font-size: 32px;
+  font-weight: bold;
 }
 p{
   font-size: 18px;
 }
 li{
   width: 100%;
-  font-size: 32px;
+  font-size: 2vw;
   list-style: none;
 }
 img{
@@ -39,35 +42,33 @@ section{
   animation: under_line 0.5s cubic-bezier(0.33,1,0.68,1) forwards;
 }
 nav{
-  width: 80%;
+  width: 100%;
+  
 }
 ul#headerList{
   display: flex;
   justify-content: space-around;
   text-align: center;
   width: 100%;
-  margin-left: auto;
   padding: 10px 20px;
-  font-size: 20px;
   color: #fff;
   /*background-color: rgba(255,255,255,0.8);*/
   border-radius: 100vh;
-  opacity: 0.7;
+  opacity: 1;
 
 }
 ul#headerList li{
   position: relative;
-  text-stroke: 2px black;
-  paint-order: stroke;
   flex-basis:20%;
-  -webkit-text-stroke: 2px black;
 }
 ul#headerList li::after{
-  width: 20px;
-  height: 20px;
-  content: url(../images/矢印.svg);
-  position: absolute;
-  transform: rotate(deg90);
+  width: 30px;
+  height: 30px;
+  content: '';
+  background-image: url(../images/矢印.svg);
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
 
 }
 p#headerlogo{
@@ -83,6 +84,7 @@ p#headerlogo img{
 }
 nav ul#headerList li a::after{
   position: absolute;
+  color: #fff;
   bottom: -10px;
   left: 0;
   content: '';
@@ -104,21 +106,14 @@ section{
   animation-delay: 1.2s;
   z-index: 1;
 }
-.profile_detail_button{
-  height: 40%;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-}
 .detail_button{
   position: relative;
   display: inline;
   text-align: center;
   padding: 20px;
-  background-color: #fff;
   border: solid;
-  color: green;
-  border-color: green;
+  color: #fff;
+  border-color: #fff;
   border-radius: 100vh;
   transition: .3s;
 }
@@ -147,7 +142,7 @@ section{
 }
 header{
   z-index:100;
-  width:100%;
+  width:60%;
   height: 15vh;
   display:flex;
   gap: 0 20px;
@@ -160,23 +155,12 @@ header{
   opacity: 0;
   animation: fade-in_top 1s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1.2s;
+  background: rgba(69,104,42,0.7);
 }
-.marge_background{
-  position: relative;
-}
-.marge_background #backgroundcolor{
-  margin-left:20px;
-  transform-origin: left center;
+#line_h{
   position: absolute;
-  font-size: 5vh;
-  transform: rotate(90deg);
-  top:0;
-  left: 0;
-  opacity: 0.7;
-  color: greenyellow;
-  z-index: -1;
+  
 }
-
 /*subTitle*/
 .subtitle h2{
   font-size: 10vh;
@@ -212,37 +196,22 @@ header{
 
 
 /*index_css*/
-h1#top_title_left{
-  margin-left:1cqh;
-  transform-origin: left center;
-  width: 100vh;
-  font-family: 'HGP創英角ゴシック';
+.top_title{
+  display: inline-block;
+  line-height: 1em;
+  transform: scale(1.7 0.7);
+  width: 100%;
   opacity: 0;
-  animation: slide-in_left_toptitle  1.25s cubic-bezier(0.5,0.7,0.3,1) forwards;
+  animation: slide-in_right  1.25s cubic-bezier(0.5,0.7,0.3,1) forwards;
   animation-delay: 1s;
   z-index: 2;
   position: absolute;
-  top: 0;
-  margin-top: -20vh;
-  font-size: 25vh;
-  color: #fff;
-  font-weight: bold;
-  mix-blend-mode: overlay;
-}
-h1#top_title_bottom{
-  margin-left:30vh;
-  width: 100vh;
-  font-family: 'HGP創英角ゴシック';
-  opacity: 0;
-  animation: slide-in_left  1.25s cubic-bezier(0.5,0.7,0.3,1) forwards;
-  animation-delay: 1s;
-  z-index: 2;
-  position: absolute;
+  text-align: right;
   bottom: 0;
-  font-size: 25vh;
+  padding-right: 20px;
+  font-size: 200px;
   color: #fff;
   font-weight: bold;
-  mix-blend-mode: overlay;
 }
 
 .square{
@@ -258,48 +227,39 @@ h1#top_title_bottom{
 .triangle {
   position: absolute;
   z-index: 1;
-  background: greenyellow;
-  opacity: 0;
+  background: rgba(69,104,42,0.7);
   height: 100%;
   width: 100%;
-  clip-path: polygon(100% 0, 60% 100%,100% 100%);
+  clip-path: polygon(100% 0, 50% 100%,100% 100%);
   /*animation*/
   animation: slide-in_right 1s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1s;
 }
 div#thumbnail{
-  background: url(../images/ハック軍服サムネ.png) no-repeat right center/cover;
+  background-color: rgba(69,104,42,0.3);
   position: relative;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   object-fit: cover;
   background-position: center;
+  background-size: 90vw 90vh;
+  background-repeat: no-repeat;
+  background-position: right top;
+
   /*animation*/
   opacity: 0;
   animation: fade-in_bottom 1s cubic-bezier(0.5,1,0.3,1) forwards;
   animation-delay: 1.2s;
 }
-div#thumbnail div#top_title_right{
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  position:absolute;
-  z-index:1;
-  color:#fff;
-  right:5%;
-  bottom:0;
-}
-div#thumbnail div#top_title_right p#top_title_right_t{
-  width: fit-content;
-  background:#000;
-  font-size:8vw;
-}
-div#thumbnail div#top_title_right p#top_title_right_b{
-  width: fit-content;
-  background:#000;
-  font-size:8vw;
-  text-align: right;
-  right: -20px;
+.top_background img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90vw;
+  height: 90vh;
+  object-fit: cover;
+  
 }
 img#top_img{
   position: relative;
@@ -307,6 +267,7 @@ img#top_img{
   width: 70%;
 }
 .top_list{
+  position: relative;
   margin-top: 150px;
   width: 100%;
   padding-left:0;
@@ -315,6 +276,23 @@ img#top_img{
   padding-bottom: 5%;
   text-align: center;
 }
+.top_list img#introduct_img{
+  position: relative;
+  margin-left: auto;
+  width: 60vw;
+  left:40vw;
+  filter: brightness(80%);
+}
+.introduct_text{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 30vw;
+}
+
+
+/*Top_Profile*/
+
 .top_profile{  
   display:flex;
 }
@@ -322,14 +300,25 @@ img#top_img{
   width: 50%;
   scale: 90%;
 }
-
-.top_profile div#profile_str{
+.top_profile.profile_right{
+  position: relative;
   width: 50%;
-  height: 60%;
+  height: max-content;
+}
+.top_profile div#profile_str{
+  margin-top: 50%;
+  width: 60%;
+  height: 100%;
   padding: 20% 20px;
-  text-align: center;
   margin: auto;
 }
+
+.profile_detail_button{
+  position: absolute;
+  top: 60%;
+  right: 15%;
+}
+
 .top_portfolio{
   display: flex;
   gap: 0 20px;
@@ -350,6 +339,9 @@ img#top_img{
   margin-bottom: 60px;
   text-align: center;
 }
+.top_portfolio_str{
+  padding: 10% 0;
+}
 ul#list{
   border: 2px solid;
   border-color: black;
@@ -357,7 +349,12 @@ ul#list{
 .portfolio_detail_button{
   padding-top: 50px;
 }
-
+.top_blog_table{
+  border-top: solid;
+}
+.top_blog_table td{
+  border-bottom: solid;
+}
 @keyframes fade-in_top{
   0%{
     transform: translateY(-10%);
@@ -374,23 +371,12 @@ ul#list{
     opacity: 1;
   }
 }
-@keyframes slide-in_left_toptitle{
-  0%{
-    transform: rotate(90deg);
-    transform-origin: left bottom;
-    transform:translateX(-100%);
-  }100%{
-    opacity: 1;
-    transform: translateX(0%);
-    transform: rotate(90deg);
-    transform-origin: left bottom;
-  }
-}
 @keyframes slide-in_left{
     0%{
     transform:translateX(-100%);
   }100%{
-    opacity: 1;
+    opacity: 0.7;
+    transform: translateX(0%);
     transform-origin: left bottom;
   }
 }
@@ -399,7 +385,7 @@ ul#list{
     
     transform:translateX(100%);
   }100%{
-    opacity: 0.75;
+    opacity: 0.7;
     transform: translateX(0%);
   }
 }
@@ -419,7 +405,7 @@ ul#list{
   from{
     background: #fff;
   }to{
-    background: linear-gradient(transparent 60%, #ffff00 30%);
+    background: linear-gradient(transparent 60%, #567d0d 30%);
   }
   
 }
