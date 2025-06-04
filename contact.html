@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="square"></div>
+    <header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="index.html">Top</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="subtitle">
+            <div id="subtitle_msg">
+                <h2>Contact</h2>
+                <p>お問い合わせ</p>
+            </div>
+
+            <img id="subtitle_img" src="images/Contact_サムネ.jpg" alt="サブサムネイル">
+            <img class="line" src="images/線.png">
+        </div>
+
+        <section class="body_sec">
+            <h2 id="title">-Form-</h2>
+            <div class = "contact_forms">
+                <p class = "contact_str"><span class = "under_line">必要事項をご入力</span>の上、"Send"ボタンをクリックしてください。</p>
+
+                <form action="" method="">
+                    <p>
+                      お名前 <span class = "red_color">[必須]<br></span><input type="text" name="user_name">
+                    </p>
+                    <p>
+                      メールアドレス <span class = "red_color">[必須]<br></span><input type="email" name="user_mail">
+                    </p>
+                    <p class="mainCheck">
+                        主な内容 <span class = "red_color">[必須]<br></span>
+                        <label><input type="checkbox" name="allergy" value="卵">質問</label>
+                        <label><input type="checkbox" name="allergy" value="乳">依頼</label>
+                      </p>
+                    <p>
+                      メッセージ <span class = "red_color">[必須]<br></span>
+                      <textarea name="message" value="Send"></textarea>
+                    </p>
+                    <p class="submitBtn">
+                      <input type="submit" value="Send" class="ffJosefin">
+                    </p>
+                </form>
+
+            </div>
+            <img class ="line" src = "images/線.png">
+        </section>
+</main>
+<footer>
+    <h4>@2025 Yume's Site</h4>
+</footer>
