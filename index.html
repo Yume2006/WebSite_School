@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/TestStylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.svg">
 </head>
 
 <body>
     <div class="square"></div>
     <header>
-        <!--<p id="headerlogo"><img src="images/webサイトロゴ.png" alt="webサイトロゴ"></p>-->
-        <nav>
-            <ul id="headerList">
-                <li><a href="index.html">Top</a></li>
-                <li><a href="profile.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="index.html">Top</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
     </header>
     <main>
         <div id="thumbnail">
@@ -31,28 +46,28 @@
             <div class="top_background"><img src="images/ハック軍服サムネ.png"></div>
 
         </div>
-        <section class="top_list">
+        <section class="body_sec">
             <img id="introduct_img" src="images/ソファイラスト.jpg">
+            <img class ="line" src = "images/線.png">
             <div class="introduct_text">
-                <h3 id="under_line">皆様のお役に立ちたくて</h3>
+                <h3><span class= "under_line">皆様のお役に立ちたくて</span></h3>
                 <p><br>自己紹介サイトをご閲覧いただきありがとうございます。<br>このサイトは、基本情報の他、実際に作った作品なども掲載しておりますので、ぜひご覧ください。</p>
             </div>
-            <div id="line_h"></div>
 
         </section>
 
-        <section class="top_list">
-            <h2 id="title">-Profile-</h2>
-            <div class="top_profile">
+        <section class="body_sec">
+            <h2 id="title">-About-</h2>
+            <div class="top_about">
                 <img src="./images/ゆなめアイコン.jpg" alt="プロフィール写真">
-                <div class="profile_right">
-                    <div id="profile_str">
+                <div class="about_right">
+                    <div id="about_str">
                         <p>Takahashi Yume</p>
                         <h3>高橋 夢</h3>
                         <p><br>2006月1月生まれ。<br>
                         2024年4月から、専門学校に通い、日々知識とスキルを習得している。</p>
-                        <div class="profile_detail_button">
-                            <a class="detail_button" href="profile.html">More detail →</a>
+                        <div class="about_detail_button">
+                            <p><p><a class="detail_button" href="about.html">More detail →</a></p></p>
                         </div>
                     </div>
 
@@ -61,7 +76,7 @@
         </section>
 
         <div class="marge_background">
-            <section class="top_list">
+            <section class="body_sec">
                 <h2 id="title">-Portfolio-</h2>
                 <div class="top_portfolio">
                     <div class=top_portfolio_detail>
@@ -72,7 +87,7 @@
                         </div>
                         
                         <div class="portfolio_detail_button">
-                            <a class="detail_button" href="profile.html">More detail →</a>
+                            <p><a class="detail_button" href="portfolio.html#Illust">More detail →</a></p>
                         </div>
                     </div>
                     <div class="top_portfolio_detail">
@@ -82,35 +97,38 @@
                             <p><br>実際に制作したゲーム等を掲載しております。</p>
                         </div>
                         <div class="portfolio_detail_button">
-                            <a class="detail_button" href="profile.html">More detail →</a>
+                            <p><a class="detail_button" href="portfolio.html#Development">More detail →</a></p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class = "top_list">
+            <section class = "body_sec">
                 <h2 id = "title">-Blog-</h2>
                 <table class = "top_blog_table">
                     <thead>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><a href="#"><h3>新潟市のおすすめグルメ３選</h3><p>2025/06/02</p></a></td>
+                        <td><a href="Blog/2.html"><h3>新潟市のおすすめグルメ３選</h3><p>2025/06/02</p></a></td>
                         
                       </tr>
                       <tr>
-                        <td><a href="#"><h3>初Officialサイトを開設</h3><p>2025/05/31</p></a></td>
+                        <td><a href="Blog/1.html"><h3>初Officialサイトを開設</h3><p>2025/05/31</p></a></td>
                       </tr>
                     </tbody>
                     <tfoot>
                     </tfoot>
                 </table>
-                <a id = "top_blog_detail">More detail→</a>
+                <div class="blog_detail_button">
+                    <p><a class="detail_button" href="blog.html">More detail →</a></p>
+                </div>
+                <img class ="line" src = "images/線.png">
             </section>
-            <section class = "top_list">
+            <section class = "body_sec">
                 <h2 id = "title">-Contact-</h2>
                 <p class = "top_contact_text">最後までご閲覧いただきありがとうございます。<br>お問い合わせは、下記リンクからお願いいたします。</p>
                 <div class="contact_button">
-                    <a class="detail_button" href="profile.html">Contact Me →</a>
+                    <p><a class="detail_button" href="contact.html">Contact Me →</a></p>
                 </div>
             </section>
         </div>
