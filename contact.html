@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>お問い合わせ-ユメのポートフォリオサイト</title>
+    <meta name="description" content="お問い合わせフォームです。何かありましたら、お気軽にお問い合わせください。">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.svg">
@@ -39,7 +40,7 @@
                     </li>
                 </ul>
             </div>
-            
+
         </div>
     </header>
     <main>
@@ -55,34 +56,39 @@
 
         <section class="body_sec">
             <h2 id="title">-Form-</h2>
-            <div class = "contact_forms">
-                <p class = "contact_str"><span class = "under_line">必要事項をご入力</span>の上、"Send"ボタンをクリックしてください。</p>
+            <div class="contact_forms">
+                <p class="contact_str"><span class="under_line">必要事項をご入力</span>の上、"Send"ボタンをクリックしてください。</p>
 
                 <form action="" method="">
                     <p>
-                      お名前 <span class = "red_color">[必須]<br></span><input type="text" name="user_name">
+                        お名前 <span class="red_color">[必須]<br></span><input type="text" name="user_name">
                     </p>
                     <p>
-                      メールアドレス <span class = "red_color">[必須]<br></span><input type="email" name="user_mail">
+                        メールアドレス <span class="red_color">[必須]<br></span><input type="email" name="user_mail">
                     </p>
                     <p class="mainCheck">
-                        主な内容 <span class = "red_color">[必須]<br></span>
+                        主な内容 <span class="red_color">[必須]<br></span>
                         <label><input type="checkbox" name="allergy" value="卵">質問</label>
                         <label><input type="checkbox" name="allergy" value="乳">依頼</label>
-                      </p>
+                    </p>
                     <p>
-                      メッセージ <span class = "red_color">[必須]<br></span>
-                      <textarea name="message" value="Send"></textarea>
+                        メッセージ <span class="red_color">[必須]<br></span>
+                        <textarea name="message" value="Send"></textarea>
                     </p>
                     <p class="submitBtn">
-                      <input type="submit" value="Send" class="ffJosefin">
+                        <input type="button" onclick="location.href='contact_comp.html'" value="Send" class="ffJosefin">
                     </p>
                 </form>
 
             </div>
-            <img class ="line" src = "images/線.png">
+            <img class="line" src="images/線.png">
         </section>
-</main>
-<footer>
-    <h4>@2025 Yume's Site</h4>
-</footer>
+    </main>
+    <footer>
+        <p>ユメのサイト</p>
+        <div class="footer_sns_logo">
+            <a href="https://x.com/Yuname_Sara_118"><img src="images/X_white_logo.svg"></a>
+            <a href="https://www.instagram.com/ynm_0118/"><img src="images/Instagram_Glyph_White.svg"></a>
+        </div>
+        <p>@2025 Yume's Site</p>
+    </footer>
