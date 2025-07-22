@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トップ-ユメのサイト</title>
-    <meta name = "description" content = "ユメの自己紹介サイトです。基本情報に加えて、実際にかいた作品なども記載しておりますので、よろしければ御覧ください。">
+    <meta name="description" content="ユメの自己紹介サイトです。基本情報に加えて、実際にかいた作品なども記載しておりますので、よろしければ御覧ください。">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script_common.js"></script>
+
     <link rel="shortcut icon" href="images/favicon.svg">
 </head>
 
@@ -37,21 +40,23 @@
                     </li>
                 </ul>
             </div>
-            
+
         </div>
     </header>
     <main>
         <div id="thumbnail">
             <div class="triangle"></div>
             <h1 class="top_title">Yume's Site</h1>
-            <div class="top_background"><img src="images/ハック軍服サムネ.png"></div>
+            <div class="top_background">
+                <img src="images/ハック軍服サムネ.png">
+            </div>
 
         </div>
         <section class="body_sec">
             <img id="introduct_img" src="images/ソファイラスト.jpg">
-            <img class ="line" src = "images/線.png">
+            <img class="line" src="images/線.png">
             <div class="introduct_text">
-                <h3><span class= "under_line">皆様のお役に立ちたくて</span></h3>
+                <h3><span class="under_line">皆様のお役に立ちたくて</span></h3>
                 <p><br>自己紹介サイトをご閲覧いただきありがとうございます。<br>このサイトは、基本情報の他、実際に作った作品なども掲載しておりますので、ぜひご覧ください。</p>
             </div>
 
@@ -66,7 +71,7 @@
                         <p>Takahashi Yume</p>
                         <h3>高橋 夢</h3>
                         <p><br>2006月1月生まれ。<br>
-                        2024年4月から、専門学校に通い、日々知識とスキルを習得している。</p>
+                            2024年4月から、専門学校に通い、日々知識とスキルを習得している。</p>
                         <div class="about_detail_button">
                             <p><a class="detail_button" href="about.html">More detail →</a></p>
                         </div>
@@ -82,18 +87,18 @@
                 <div class="top_portfolio">
                     <div class=top_portfolio_detail>
                         <img src="images/ポートフォリオ仮イラスト.jpg" alt="イラストイメージ">
-                        <div class = "top_portfolio_str">
+                        <div class="top_portfolio_str">
                             <h3>イラスト・二次創作</h3>
-                            <p><br>実際に描いたイラストを掲載しております。※二次創作も含まれています</p>
+                            <p><br>実際に描いたイラストを掲載しております。<br>※二次創作も含まれています</p>
                         </div>
-                        
+
                         <div class="portfolio_detail_button">
                             <p><a class="detail_button" href="portfolio.html#Illust">More detail →</a></p>
                         </div>
                     </div>
                     <div class="top_portfolio_detail">
                         <img src="images/ポートフォリオ仮.jpg" alt="開発イメージ">
-                        <div class = "top_portfolio_str">
+                        <div class="top_portfolio_str">
                             <h3>開発</h3>
                             <p><br>実際に制作したゲーム等を掲載しております。</p>
                         </div>
@@ -103,19 +108,30 @@
                     </div>
                 </div>
             </section>
-            <section class = "body_sec">
-                <h2 id = "title">-Blog-</h2>
-                <table class = "top_blog_table">
+            <section class="body_sec">
+                <h2 id="title">-Blog-</h2>
+                <table class="top_blog_table">
                     <thead>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td><a href="Blog/2.html"><h3>新潟市のおすすめグルメ３選</h3><p>2025/06/02</p></a></td>
-                        
-                      </tr>
-                      <tr>
-                        <td><a href="Blog/1.html"><h3>初Officialサイトを開設</h3><p>2025/05/31</p></a></td>
-                      </tr>
+                        <tr>
+                            <td><a href="Blog/3.html">
+                                    <h3>おすすめアニメ紹介</h3>
+                                    <p>2025/06/11</p>
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="Blog/2.html">
+                                    <h3>新潟市のおすすめグルメ３選</h3>
+                                    <p>2025/06/02</p>
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="Blog/1.html">
+                                    <h3>初Officialサイトを開設</h3>
+                                    <p>2025/05/31</p>
+                                </a></td>
+                        </tr>
                     </tbody>
                     <tfoot>
                     </tfoot>
@@ -123,11 +139,11 @@
                 <div class="blog_detail_button">
                     <p><a class="detail_button" href="blog.html">More detail →</a></p>
                 </div>
-                <img class ="line" src = "images/線.png">
+                <img class="line" src="images/線.png">
             </section>
-            <section class = "body_sec">
-                <h2 id = "title">-Contact-</h2>
-                <p class = "top_contact_text">最後までご閲覧いただきありがとうございます。<br>お問い合わせは、下記リンクからお願いいたします。</p>
+            <section class="body_sec">
+                <h2 id="title">-Contact-</h2>
+                <p class="top_contact_text">最後までご閲覧いただきありがとうございます。<br>お問い合わせは、下記リンクからお願いいたします。</p>
                 <div class="contact_button">
                     <p><a class="detail_button" href="contact.html">Contact Me →</a></p>
                 </div>
@@ -136,8 +152,9 @@
     </main>
     <footer>
         <p>ユメのサイト</p>
-        <div class= "footer_sns_logo">
+        <div class="footer_sns_logo">
             <a href="https://x.com/Yuname_Sara_118"><img src="images/X_white_logo.svg"></a>
+            <a href="https://github.com/Yume2006"><img src="images/github-mark-white.svg"></a>
             <a href="https://www.instagram.com/ynm_0118/"><img src="images/Instagram_Glyph_White.svg"></a>
         </div>
         <p>@2025 Yume's Site</p>

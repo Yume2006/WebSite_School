@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script_common.js"></script>
+    <script src="js/script_contact.js"></script>
 </head>
 
 <body>
@@ -59,7 +62,7 @@
             <div class="contact_forms">
                 <p class="contact_str"><span class="under_line">必要事項をご入力</span>の上、"Send"ボタンをクリックしてください。</p>
 
-                <form action="" method="">
+                <form action="" method="" id ="forms">
                     <p>
                         お名前 <span class="red_color">[必須]<br></span><input type="text" name="user_name">
                     </p>
@@ -68,16 +71,16 @@
                     </p>
                     <p class="mainCheck">
                         主な内容 <span class="red_color">[必須]<br></span>
-                        <label><input type="checkbox" name="allergy" value="卵">質問</label>
-                        <label><input type="checkbox" name="allergy" value="乳">依頼</label>
+                        <label><input type="checkbox" name="content" value="質問" id = "question">質問</label>
+                        <label><input type="checkbox" name="content" value="依頼" id = "request">依頼</label>
                     </p>
                     <p>
-                        メッセージ <span class="red_color">[必須]<br></span>
-                        <textarea name="message" value="Send"></textarea>
+                        本文 <span class="red_color">[必須]<br></span>
+                        <textarea name="message"></textarea>
                     </p>
-                    <p class="submitBtn">
-                        <input type="button" onclick="location.href='contact_comp.html'" value="Send" class="ffJosefin">
-                    </p>
+                    <button type="submit" class="ffJosefin" id = "send">
+                        <p class="submitBtn">Send</p>
+                    </button>
                 </form>
 
             </div>
@@ -88,6 +91,7 @@
         <p>ユメのサイト</p>
         <div class="footer_sns_logo">
             <a href="https://x.com/Yuname_Sara_118"><img src="images/X_white_logo.svg"></a>
+            <a href="https://github.com/Yume2006"><img src="images/github-mark-white.svg"></a>
             <a href="https://www.instagram.com/ynm_0118/"><img src="images/Instagram_Glyph_White.svg"></a>
         </div>
         <p>@2025 Yume's Site</p>

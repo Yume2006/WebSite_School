@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>ブログ-ユメのポートフォリオサイト</title>
+    <meta name="description" content="記事一覧を掲載しております。様々なジャンルの記事を掲載しておりますので、ご興味のある記事がありましたら、ぜひご覧ください。">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="data/blog.js"></script>
+    <script src="js/script_common.js"></script>
+    <script src="js/script_blog.js"></script>
 </head>
 
 <body>
@@ -39,7 +44,7 @@
                     </li>
                 </ul>
             </div>
-            
+
         </div>
     </header>
     <main>
@@ -55,8 +60,12 @@
 
         <section class="body_sec">
             <h2 id="title">-Blog-</h2>
-            <div class = "blog_list">
-                <ul>
+            <div class="blog_list">
+                <div class = "search">
+                    <input type="search" id = "search_text"/>
+                    <button id = "search"><p>検索</p></button>
+                </div>
+                <ul id = "blog_list">
                     <li>
                         <a href="Blog/1.html">
                             <img src="images/WebサイトBlogサムネ.png">
@@ -66,17 +75,29 @@
                     </li>
                     <li>
                         <a href="Blog/2.html">
-                            <img src="images/WebサイトBlogサムネ.png">
+                            <img src="images/restaurantPICコーヒー.jpg">
                             <h3>おすすめの飲食店3選</h3>
                             <p>新潟市中央区にあるおすすめの飲食店を紹介します</p>
                         </a>
-                        
+                    </li>
+                    <li>
+                        <a href="Blog/3.html">
+                            <img src="images/ヤルミナ2周年.png">
+                            <h3>おすすめのアニメ紹介</h3>
+                            <p>おすすめのアニメを紹介します</p>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <img class ="line" src = "images/線.png">
+            <img class="line" src="images/線.png">
         </section>
-</main>
-<footer>
-    <h4>@2025 Yume's Site</h4>
-</footer>
+    </main>
+    <footer>
+        <p>ユメのサイト</p>
+        <div class="footer_sns_logo">
+            <a href="https://x.com/Yuname_Sara_118"><img src="images/X_white_logo.svg"></a>
+            <a href="https://github.com/Yume2006"><img src="images/github-mark-white.svg"></a>
+            <a href="https://www.instagram.com/ynm_0118/"><img src="images/Instagram_Glyph_White.svg"></a>
+        </div>
+        <p>@2025 Yume's Site</p>
+    </footer>

@@ -1,0 +1,14 @@
+<button onclick="save()">保存</button>
+<button onclick="load()">読み込み</button>
+
+<script>
+  function save() {
+    localStorage.setItem("testKey", "ねこ");
+    alert("保存した！");
+  }
+
+  function load() {
+    const value = localStorage.getItem("testKey");
+    alert(value ?? "データなし");
+  }
+</script>
